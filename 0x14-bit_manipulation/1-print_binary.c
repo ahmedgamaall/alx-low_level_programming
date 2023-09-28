@@ -17,12 +17,10 @@ void print_binary(unsigned long int number)
 		{
 			_putchar('1');
 			counter++;
-			_putchar('\n');
 		}
 		else if (counter)
 			_putchar('0');
 	}
 	if (!counter)
 		_putchar('0');
-	_putchar('\n');
 }
