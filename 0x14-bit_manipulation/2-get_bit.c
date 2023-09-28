@@ -7,14 +7,10 @@
  *
  * Return: value of the bit
  */
-int get_bit(unsigned long int number, unsigned int index)
+int get_bit(unsigned long int num, unsigned int index)
 {
-	int val_bit;
-
-	if (index > 63)
+	if (index >= (sizeof(num) * 8))
 		return (-1);
 
-	val_bit = (number >> index) & 1;
-
-	return (val_bit);
+	return ((num >> index) & 1);
 }
