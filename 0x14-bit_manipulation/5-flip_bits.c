@@ -5,7 +5,6 @@
  * to get from one number to another
  * @n: first number
  * @m: second number
- *
  * Return: number of bits to change
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
